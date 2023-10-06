@@ -7,12 +7,12 @@ from snowflake.connector.pandas_tools import write_pandas
 
 #Module to create the snowflake connection and return the connection objects
 def create_connection():
-   conn = snow.connect(user="SAMEER",
-   password="Sydney@02",
-   account="ljgpwja-ha46180",
-   warehouse="COMPUTE_WH",
-   database="DEMO_DB",
-   schema="DBT_RAW")
+   conn = snow.connect(user="username",
+   password="password",
+   account="account",
+   warehouse="warehouse",
+   database="database",
+   schema="schema")
    cursor = conn.cursor()
    print('SQL Connection Created')
    return cursor,conn
