@@ -4,6 +4,10 @@
     
 ) }}
 
+{{ config(
+	tags=[var('TAG_DIMENSION')]
+) }}
+
 SELECT
 ID
 ,IMDB_ID
@@ -12,4 +16,4 @@ ID
 ,TMDB_POPULARITY
 ,TMDB_SCORE
 FROM
-{{ source('Netflix','TITLES')}}
+PROD_DB.DBT_PROD.TITLES

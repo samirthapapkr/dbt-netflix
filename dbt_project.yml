@@ -39,4 +39,7 @@ models:
       
       
 vars:
-  titles_raw: 'NETFLIX.DBT_RAW.TITLES'
+  titles_raw: 'PROD_DB.DBT_PROD.TITLES'
+  TAG_DIMENSION: 'DIMENSION'
+  TAG_FACT: 'FACT'
+  TAG_TEST: 'TEST'
